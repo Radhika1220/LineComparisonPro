@@ -24,10 +24,12 @@ namespace LineComparison1
 
 
                 double length1 = Program.FindingLength(x1, x2, y1, y2);
+                Console.WriteLine("Line Length :" + length1);
                 StoringLength[i] = length1;
             }
             Program obj = new Program();
             obj.EqualityMethod(StoringLength[1].ToString(), StoringLength[2].ToString());
+            obj.comparingLines(StoringLength[1].ToString(), StoringLength[2].ToString());
 
         }
 
@@ -49,6 +51,21 @@ namespace LineComparison1
             double len = Math.Round(LineLength, 2);
             return len;
 
+        }
+        public  void comparingLines(string len1,string len2)
+        {
+            if(len1.CompareTo(len2)>0)
+            {
+                Console.WriteLine("Line1 is greater than line2");
+            }
+            else if (len1.CompareTo(len2) < 0)
+            {
+                Console.WriteLine("Line1 is lesser than line2");
+            }
+            if (len1.CompareTo(len2) > 0)
+            {
+                Console.WriteLine("both lines are equal");
+            }
         }
     }
 }
