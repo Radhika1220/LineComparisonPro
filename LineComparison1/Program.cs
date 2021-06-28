@@ -6,7 +6,7 @@ namespace LineComparison1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Comparison problem");
+            double[] StoringLength = new double[5];
             for (int i = 1; i <= 2; i++)
             {
                 Console.WriteLine("Enter value for  coordinate x1");
@@ -22,10 +22,26 @@ namespace LineComparison1
                 Console.WriteLine("Enter value for  first coordinate y2");
                 int y2 = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Line Length:" + Program.FindingLength(x1, y1, x2, y2));
+
+                double length1 = Program.FindingLength(x1, x2, y1, y2);
+                StoringLength[i] = length1;
             }
+            Program obj = new Program();
+            obj.EqualityMethod(StoringLength[1].ToString(), StoringLength[2].ToString());
+
         }
 
+        public void EqualityMethod(string len1, string len2)
+        {
+            if (len1.Equals(len2))
+            {
+                Console.WriteLine("Lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Lines are not equal");
+            }
+        }
         public static double FindingLength(int x1, int x2, int y1, int y2)
         {
             //Calculating a line length
@@ -36,5 +52,6 @@ namespace LineComparison1
         }
     }
 }
- 
+
+
 
