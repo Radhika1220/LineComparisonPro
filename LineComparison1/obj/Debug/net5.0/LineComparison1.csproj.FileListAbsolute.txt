@@ -13,3 +13,4 @@ C:\Users\Radhika\source\repos\LineComparison1\LineComparison1\obj\Debug\net5.0\L
 C:\Users\Radhika\source\repos\LineComparison1\LineComparison1\obj\Debug\net5.0\ref\LineComparison1.dll
 C:\Users\Radhika\source\repos\LineComparison1\LineComparison1\obj\Debug\net5.0\LineComparison1.pdb
 C:\Users\Radhika\source\repos\LineComparison1\LineComparison1\obj\Debug\net5.0\LineComparison1.genruntimeconfig.cache
+C:\Users\Radhika\source\repos\LineComparison1\LineComparison1\obj\Debug\net5.0\LineComparison1.csproj.AssemblyReference.cache
